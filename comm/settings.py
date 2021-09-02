@@ -22,9 +22,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'l5wte12cxdvil4)g=9nmvs00^swng_q5n+c*n#s_xq!m!394vk'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['democrmplatform1.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = []
 
 # Application definition
 
@@ -39,8 +39,7 @@ INSTALLED_APPS = [
     'accounts.apps.AccountsConfig',
 
     'django_filters',
-    'psycopg2',
-    'storages',
+    
 ]
 
 MIDDLEWARE = [
